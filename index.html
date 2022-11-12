@@ -72,8 +72,11 @@ function generateRandom() {
   return Math.round(20 * Math.random())
 }
 function generateArray() {
-  for(let i = 0; i< 10; i++) {
-    a.push(generateRandom())
+  while(a.length<10) {
+    num = generateRandom()
+    if (num%4!=0) {
+      a.push(num)
+    }
   }
   console.log(a)
 }
