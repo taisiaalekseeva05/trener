@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ЗАДАЧА 1 -->
+  <!-- <div class="wrapper"></div>   -->
+
+  <!-- ЗАДАЧА 2
+
+  <div class="modal-overlay" id="modal-overlay"></div>
+  <div class="modal" id="modal">
+    <button class="close-button" id="close-button">Obvious Close Button</button>
+    <div class="modal-guts">
+      <h1>modal example</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil possimus qui veritatis enim nobis blanditiis nam, vel asperiores illo quibusdam incidunt deserunt consequuntur cum quos ut architecto placeat dolore facere.</p>
+    </div>
+  </div>
+  <button id="open-button" class="open-button">Open Button</button> -->
+
+
+
+
+  <!-- <div>
+    <h1>Скрыть окно можно кнопкой "а" </h1>
+  </div>
+  <button id="modal-show">Show</button>
+  <button id="modal-hide">Hide</button>
+  <div class="modal"></div> -->
+
+  <script>
+    // ЗАДАЧА 2.
+
+    // let modal = document.querySelector("#modal")
+    // let modalOverlay = document.querySelector("#modal-overlay")
+    // let closeButton = document.querySelector("#close-button")
+    // let openButton = document.querySelector("#open-button")
+
+    // closeButton.addEventListener("click",function(){
+    //   modal.classList.toggle("closed")
+    //   modalOverlay.classList.toggle("closed") 
+    // })
+    // openButton.addEventListener("click",function() {
+    //   modal.classList.toggle("closed")
+    //   modalOverlay.classList.toggle("closed") 
+    // })
+
+
+//----------- ЦИКЛЫ------------
+
+// задача 4.
+// Напишите скрипт, который принимает от пользователя величину годовой ставки  в процентах и выводит количество лет
+// по прошествии которых вклад увеличивается вдвое 
+// let fund = +prompt("initial deposit:")
+// let years = 0
+// while(fund < 2000){
+//   years++;
+//   fund += fund * 0.2
+// }
+// alert("ты заработаешь 2000 через:" + years + "years")
+
+// задача 5.
+// напишите скрипт который выводит ровно 10 случайных чисел из диапазона 1 - 20 
+// кроме тех которые делятся на 4
+let a = []
+function generateRandom() {
+  return Math.round(20 * Math.random())
+}
+function generateArray() {
+  for(let i = 0; i< 10; i++) {
+    a.push(generateRandom())
+  }
+  console.log(a)
+}
+generateArray()
+
+  
+  
+  // return arr[Math.floor(Math.random()*arr.length)];
+      
+
+  
+ 
+
+
+// задача 1
+// 1пример
+// fund = +prompt("credit sum")
+// creditBody = fund + 0,2 * fund / 12
+// mounthlyPayment = creditBody / 12
+// for(i = 1; i <= 12; i++)
+
+// console.log("month "+i+" payment" + parseFloat(mounthlyPayment.toFixed(2)))
+
+// 2пример
+// fund = +prompt("credit sum")
+// months =  +prompt("credit term (months)")
+// creditBody = fund + 0.2 * fund * months / 12
+// mounthlyPayment = creditBody / months
+// for(i = 1; i <= months; i++)
+// console.log("month "+i+" payment" + mounthlyPayment)
+
+
+// ОПЕРАТОРЫ ЦИКЛА FOR IN, FOR OF
+
+// arr = [5, 4, 3, 2, 1]
+// for(i in arr)
+// console.log(i) 
+// for(i of arr) 
+// console.log(i)
+
+
+// ОПЕРАТОРЫ ЦИКЛА  Break, Continue
+
+// 1 пример
+// Нужно сгенерировать не больше десяти случайных чисел из диапазона 1 - 7. В случае если выпадает четверка, генерация прекращается.
+
+
+// for (i = 0; i < 10; i++) {
+//   rnd = Math.round(Math.random()* 6) + 1
+//   if (rnd == 4) break
+//   console.log(rnd)
+// }
+
+// 2 пример
+// Нужно сгенерировать  десять случайных чисел, но без четверок.
+
+// i = 0;
+// i++
+// while ( i < 10) {
+//   rnd = Math.round(Math.random()* 6) + 1
+//   if (rnd == 4) continue
+//   console.log(rnd)
+// }
+
+
+    //---------- УДАЛЕНИЕ СВОЙСТИ В ОБЪЕКТЕ-------
+
+    // let cat = {}
+    // cat.name = "Vasiliy"
+    // cat["age"] = 3
+    // delete cat.name
+
+    // alert (cat.name)
+    // alert(cat["age"])
+
+
+
+
+// СУЩЕСТВУЕТ ЛИ СВОЙСТВО В ОБЪЕКТЕ
+
+// let obj ={}
+// obj.name = "Oleg"
+// obj.age = 18
+// if("age" in obj) {
+//   alert("exists")
+// }
+// else{
+//   alert("not exists")
+// }
+// console.log(obj)
+
+
+// 3 СПОСОБ СОЗДАНИЯ ОБЪЕКТА СО СВОЙСТВАМИ
+
+// let student = {
+//   name: "Daria",
+//   lastName: "Kislicina",
+//   age: 23,
+//   address:{
+//     street:"lenina 10, rum 5",
+//     city: "Sochi",
+//     country: "Rasha"
+
+//   }
+// }
+// ПРОСМОТР ВСЕХ СВОЙСТВ  ВНУТРИ ОБЪЕКТА
+
+// for (let tempProperty in student){
+
+// отображаем название свойства
+
+// alert(tempProperty)
+
+// значение свойства
+
+// alert(student [tempProperty])
+
+// }
+
+// alert (student.address.street)
+// console.log(student)
+
+
+//--------------- МАСИВЫ-------------------
+
+// 1 ПУСТОЙ МАСИВ
+
+// let arrayName = new Array ()
+
+// 2 МАСИВ ЗАДАННОЙ ДЛИНЫ
+
+// let arrayName1 = new Array (numberlength)
+
+// 3 МАСИВ СО ЗНАЧЕНИЯМИ
+
+// let arrayName2 = new Array (Element, Element1, Element2)
+
+
+// ЗАЛИСЬ ЗНАЧЕНИЙ В МАСИВ
+
+// 1 создали пустой масив
+// let arr = new array ()
+
+// заполняем значением
+// arr [0] = 34
+// arr [1] = 99
+// arr [2] = 100  
+
+// 2 создали масив с длиной 3
+// let arr2 = new array(3)
+
+// arr2[0] = 111
+// arr2[1] = 56
+// arr2[2] = 73
+// УВЕЛИЧИВАЕМ НА 2 ЭЛЕМЕНТА
+// arr2[3] = 333
+// arr2[4] = 999
+</script>
+</body>
+</html>
