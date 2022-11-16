@@ -55,11 +55,46 @@
 // функция, создающая 5 однотипных блоков-заголовков (<h2></h2>) 
 // с надписями Header 1 … Header 5
 
-function Show5Blocks() {
-  for (i = 1; i>= 5; i++)
-  document.write("<h2> Header " +i+" </h2>")
-}
-Show5Blocks()
+// function Show5Blocks() {
+//   for (i = 1; i<= 5; i++)
+//   document.write("<h2> Header " +i+" </h2>")
+// }
+// Show5Blocks()
+
+// задача 2.
+// создайте функцию showError(x), которая будет выводить (окна alert) сообщение с текстом "Error X occurred!"
+// где X - текст из аргумента функции например, вызов showError ("Out of memory") должен вывести сообщение ("Error Out of memory occurred!")
+
+// function showError(x, y, z) {
+//   alert(`Error ${x} ${y} ${z} occurred!`)
+//   // alert('Error ' + x + ' ' + y + ' ' + z + 'occurred!')
+// }
+
+// y = 'Out of memory'
+// showError(y, 0, 'sdfsdf')
+// showError('another')
+
+
+// задача 3.
+// создайте функцию createHeaders(N), которая создает на странице N заголовков второго уровня (<h2>) с надписями Header1, Header2 ... HeaderN.
+
+  // function createHeaders(N) {
+  //   for(i= 1; i<=N; i++) {
+  //     document.write("<h2> Header "+i+"</h2>")  
+  //     // console.log(i)
+  //   }
+  // }
+  // createHeaders(8)
+
+  // a = 10 
+  // if (a < 11) {
+  //   console.log('biggest')
+  //   console.log(++a)
+  // } else {
+  //   console.log('lowest')
+  //   console.log(--a)
+  // }
+    
 
 
 //----------- ЦИКЛЫ------------
@@ -78,20 +113,20 @@ Show5Blocks()
 // задача 5.
 // напишите скрипт который выводит ровно 10 случайных чисел из диапазона 1 - 20 
 // кроме тех которые делятся на 4
-let a = []
-function generateRandom() {
-  return Math.round(20 * Math.random())
-}
-function generateArray() {
-  while(a.length<10) {
-    num = generateRandom()
-    if (num%4!=0) {
-      a.push(num)
-    }
-  }
-  console.log(a)
-}
-generateArray()
+// let a = []
+// function generateRandom() {
+//   return Math.round(20 * Math.random())
+// }
+// function generateArray() {
+//   while(a.length<10) {
+//     num = generateRandom()
+//     if (num%4!=0) {
+//       a.push(num)
+//     }
+//   }
+//   console.log(a)
+// }
+// generateArray()
 
   
   
